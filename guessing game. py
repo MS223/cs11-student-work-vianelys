@@ -1,3 +1,19 @@
 name = raw_input("What's your name?")
-upper_bound = input("What's the highest number you can think of?")
-user_guess = raw_input ("What number am I thinking of?")
+
+upper_bound = input("Alright" + name + ", what's the highest number you can think of?")
+
+user_guess = input ("Between 1 and your number, what number am I thinking of?")
+import random
+number = random.randint(1,upper_bound)
+
+while number != user_guess:
+
+    if number < user_guess:
+        print ("A little lower!")
+        user_guess = input ("Between 1 and your number, what number am I thinking of?")
+    elif number > user_guess:
+        print ("Woah! Too high!")
+        user_guess = input ("Between 1 and your number, what number am I thinking of?")
+print ("You got it!")
+# hey monday me. I can't think right now, so you finish it.
+ #It took 4 periods but I finally got it!
