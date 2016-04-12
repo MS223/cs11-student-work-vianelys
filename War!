@@ -1,0 +1,10 @@
+import random
+def player_turn():
+    player_1=raw_input("What's your name, Player One?")
+    player_two=raw_input("What's your name, Player Two?")
+print player_turn():
+cards=range(2,15)*4
+random.shuffle(cards)
+print cards
+def compare_scores():
+    #this doesn't work
