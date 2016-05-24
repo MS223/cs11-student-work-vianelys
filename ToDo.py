@@ -1,5 +1,3 @@
-question = raw_input("What would you like to do?")
-day = raw_input("What day?")
 days_of_week = {
     "Monday":[],
     "Tuesday":[],
@@ -9,7 +7,22 @@ days_of_week = {
     "Saturday":[],
     "Sunday":[]
 }
-def add():
+def add(day,question):
     days_of_week[day].append(question)
-add()
+#add()
+
+
+def get(day,question):
+    days_of_week[day].append(question)
+#get()
+
+
+def choice():
+    user_choice = raw_input("How can I help you?")
+    while user_choice != "exit":
+        if user_choice == "add":
+            question = raw_input("What would you like to do?")
+            day = raw_input("What day?")
+            add(day,question)
+choice()
 print days_of_week
